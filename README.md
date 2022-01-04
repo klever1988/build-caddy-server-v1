@@ -8,15 +8,14 @@ This should help you get started with using Caddy without relying on the pre-bui
 
 ## Usage
 
-    $ rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO
-    $ curl -s https://mirror.go-repo.io/centos/go-repo.repo | tee /etc/yum.repos.d/go-repo.repo
-    $ yum install golang-1.14 git -y
-    $ git clone https://github.com/klever1988/build-caddy-server-v1
-    $ export GO111MODULE=on
-    $ go mod tidy
-    $ ./build.sh
-    $ file caddy
-    caddy: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
+    rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO
+    curl -s https://mirror.go-repo.io/centos/go-repo.repo | tee /etc/yum.repos.d/go-repo.repo
+    yum install golang-1.14 git -y
+    git clone https://github.com/klever1988/build-caddy-server-v1
+    export GO111MODULE=on
+    go mod tidy
+    ./build.sh
+    file caddy
 
 ### Volumes
 
