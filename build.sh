@@ -4,7 +4,7 @@ set -eu
 set -x
 
 telem=${TELEMETRY-false}
-plugins=${PLUGINS-xuqingfeng/caddy-rate-limit,pyed/ipfilter,miekg/caddy-prometheus}
+plugins=${PLUGINS-xuqingfeng/caddy-rate-limit,pyed/ipfilter,hiphref/caddy-geoip}
 
 echo 'go get' && {
     go get -v github.com/caddyserver/caddy"${VERSION+@}${VERSION-}"
