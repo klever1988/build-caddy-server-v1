@@ -17,7 +17,7 @@ This should help you get started with using Caddy without relying on the pre-bui
 
     git clone https://github.com/klever1988/build-caddy-server-v1 && cd build-caddy-server-v1
     export GO111MODULE=on
-    go mod tidy
+    go mod init caddy && go mod tidy
     ./build.sh
     file caddy
 
