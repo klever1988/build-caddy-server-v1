@@ -15,7 +15,7 @@ This should help you get started with using Caddy without relying on the pre-bui
     echo 'export GOPATH="$HOME/go"' >> ~/.bashrc
     echo 'export PATH="$PATH:${GOPATH//://bin:}/bin"' >> ~/.bashrc
 
-    git clone https://github.com/klever1988/build-caddy-server-v1
+    git clone https://github.com/klever1988/build-caddy-server-v1 && cd build-caddy-server-v1
     export GO111MODULE=on
     go mod tidy
     ./build.sh
