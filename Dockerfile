@@ -1,4 +1,4 @@
-FROM golang:1-alpine
+FROM golang:1.14-alpine
 
 LABEL maintainer "NODA, Kai <nodakai@gmail.com>"
 
