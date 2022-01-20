@@ -4,7 +4,7 @@ set -eu
 set -x
 
 telem=${TELEMETRY-false}
-plugins=${PLUGINS-`cat output/plugins`}
+plugins=${PLUGINS-`cat /output/plugins`}
 
 echo 'go get' && {
     go get -v github.com/caddyserver/caddy"${VERSION+@}${VERSION-}"
